@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+#navlist {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    align-items: center;
+}
+
+header {
+    background-color: beige;
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    .navigation{
+        flex-direction: column;
+        align-items: center;
+    }
+    #navlist {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+
+
+.container img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.container {
+    position: relative;
+    height:100vh;
+    width: 100vw;
+    background-image: url(https://s0.wp.com/wp-content/themes/pub/urbem/assets/images/urbem_beach-sea-coast-water-nature-outdoor.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.card {
+    position: absolute;
+    bottom:0;
+    left:200px; 
+    background-color: rgb(59, 59, 117);
+    color: white;
+    padding: 20px;
+  height:200px;
+  width:500px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card h1 {
+    font-size: 2.5rem;
+    color: rgb(154, 154, 59);
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.2rem;
+}
+.container1{
+    display: flex;
+    justify-content: space-around;
+}
+.card2 h1{
+    font-size: 2rem;
+}
+.card3 h1{
+    font-size: 2rem;
+}
+.button{
+    display:flex;
+    padding-top: 30px;
+    justify-content: space-around;
+}
+#button1{
+    border:1px solid black;
+    width:auto;
+    text-align:center 
+    ;padding: 15px;
+    background-color: rgb(168, 168, 72);
+}
+
+#button2{
+    border:1px solid black;
+    width:auto;
+    text-align:center;
+    padding: 15px;
+}
+#button2:hover{
+    background-color: rgb(168, 168, 72);
+}
+.card1,.card2,.card3{
+    background-color: rgb(59, 59, 117);;
+}
+.card1 h2{
+    color: rgb(154, 154, 59);
+}
+.card2 h2,h1,p{
+    color: rgb(154, 154, 59);
+}
+.card3 h2,h1,p{
+    color: rgb(154, 154, 59);
+}
+.card2 h2,p{
+padding-top: 20px;
+}
+.card3 h2,p{
+padding-top: 20px;
+}
+.card1,.card2,.card3{
+    padding:80px;
+}
+@media(max-width:768px){
+    .container1{
+        padding-top: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #button1{
+        height: auto;
+    }
+    .button{
+        display:flex;
+gap:20px;
+    }
+    #button1{
+        height: auto;
+    }
+    #button2{
+        height: auto;
+    }
+}
+
+@media(max-width:768px){
+    .container{
+        position:relative;
+
+    }
+    .card{
+        position:absolute;
+        display:flex;
+        flex-direction: column;
+        left:0;
+        top:595px;
+    }
+ }
+
+
+
+
+@media(max-width:1011px){
+.button{
+    display:flex;
+gap:20px;
+}
+}
+.container2{
+    padding: 30px;
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    position: relative;
+}
+.box1 img{
+    height:500px;
+    width:600px;
+    object-fit: cover;
+background-repeat: no-repeat;
+background-position: cover;
+}
+.small{
+    position:absolute;
+    left:50px;
+    top:150px;
+}
+.small h1{
+    color:white;
+    font-size:2.5rem;
+}
+.small p{
+    color:white;
+}
+.box2 img{
+    object-fit: cover;
+background-repeat: no-repeat;
+background-position: cover;
+}
+.box2{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.heading1{
+    font-size: 2rem;;
+    font-size: bold;
+    color:black;
+}
+.heading4{
+    font-size: 2rem;;
+    font-size: bold;
+    color:black;
+}
+.box3{
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+}
+@media(max-width:768px){
+    .container2{
+        display:flex;
+        flex-wrap: wrap;
+        gap:20px;
+    }
+}
+@media(max-width:1440px){
+    .container2{
+        display:flex;
+        flex-wrap: wrap;
+        gap:20px;
+    }
+}
+.container3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.box4{
+display: flex;
+flex-direction: column;
+    gap:20px;
+
+}
+.box4 h1{
+    color:black;
+    font-size: 2.5rem;
+}
+.smallheading h3{
+    font-weight: lighter;
+}
+ 
+.box5{
+display: flex;
+flex-direction: column;
+    gap:20px;
+
+}
+.box5 h1{
+    color:black;
+    font-size: 2.5rem;
+}
+.smallheading h3{
+    font-weight: lighter;
+}
+.box6{
+display: flex;
+flex-direction: column;
+    gap:20px;
+
+}
+.box6 h1{
+    color:black;
+    font-size: 2.5rem;
+}
+.smallheading h3{
+    font-weight: lighter;
+}
+ 
+.box7{
+display: flex;
+flex-direction: column;
+    gap:20px;
+
+}
+.box7 h1{
+    color:black;
+    font-size: 2.5rem;
+}
+.smallheading h3{
+    font-weight: lighter;
+}
+ @media(max-width:1175px){
+    .container3{
+        display:flex;
+        flex-wrap: wrap;
+        gap:30px;
+    }
+ }
+ .footer{
+    border:1px solid black;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    }
+    .navigate{
+        display: flex;
+        padding:2rem;
+        justify-content: space-between;
+    }
+    @media(max-width:768px){
+        .navigate{
+            display:flex;
+            flex-wrap: wrap;
+            gap:40px;
+        }
+    }
+ 
